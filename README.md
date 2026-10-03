@@ -26,5 +26,24 @@ Inside a Claude Code session:
 New or changed notes show up in `git status`. Review them with `git diff`,
 commit to accept, and `git restore` to reject.
 
-See the [project wiki](https://github.com/StephanieF/DrupalAI/wiki) for the
+See the [kenkeep wiki page](https://github.com/StephanieF/DrupalAI/wiki/Kenkeep:-AI-knowledge-base) for the
 full guide, and `.ai/kenkeep/README.md` for kenkeep's own reference.
+
+## Plan-first AI tasks (Strikethroo)
+
+Larger AI-assisted changes go through
+[Strikethroo](https://strikethroo.canpicasoft.com): plan → tasks → execute,
+with a review point between each step. Plans live in `.ai/strikethroo/plans/`.
+
+Inside a Claude Code session:
+
+- `/st-create-plan <describe the work>`: write a plan (note its ID)
+- `/st-refine-plan <id> <notes>`: adjust the plan
+- `/st-generate-tasks <id>`: break it into tasks and an execution blueprint
+- `/st-execute-blueprint <id>`: implement it, one commit per phase (start
+  from a clean working tree)
+
+Check the workspace with `npx strikethroo validate`, and browse plans with
+`npx strikethroo serve`. See the
+[Strikethroo wiki page](https://github.com/StephanieF/DrupalAI/wiki/Strikethroo)
+for the full guide.
