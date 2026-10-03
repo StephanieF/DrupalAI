@@ -8,7 +8,7 @@ okf_version: '0.1'
 > This index only orients you; leaves hold the durable guidance. Open at least one relevant leaf before acting.
 
 ## Subfolders
-_None._
+- Load [`documentation/`](documentation/index.md) for more information on where and how project tooling and developer docs are written (GitHub wiki, root README); read before documenting a new tool or editing READMEs.
 
 ## Conventions (how we build)
 _None yet._
